@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренеры | FitLine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+            <img src="images/logo.png" alt="FitLine" class="logo-icon" width="24" height="24">
+            <h2 class="logo-text">FitLine</h2>
+          </a>
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="trainers.html" class="nav-link">Наши тренеры</a>
+          </li>
+          <li class="nav-item">
+            <a href="abonements.html" class="nav-link">Абонементы</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link">Контакты</a>
+          </li>
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- Trainers section -->
+      <section class="trainers-section" id="trainers">
+        <div class="section-content">
+          <h2 class="section-title">Наши тренеры</h2>
+          <!-- Filter for trainers -->
+          <div class="trainer-filter">
+            <label for="specialization">Специализация:</label>
+            <select id="specialization" name="specialization">
+              <option value="all">Все</option>
+              <option value="fitness">Фитнес</option>
+              <option value="fight">Единоборства</option>
+              <option value="pilates">Пилатес</option>
+            </select>
+
+            <div class="trainer-cards">
+                <!-- Trainer 1: Фитнес -->
+                <div class="trainer fitness">
+                  <img src="images/trener6.jpg" alt="Тренер1" class="trainer-image" />
+                  <h3 class="trainer-name">Астрид   23</h3>
+                  <p class="trainer-opyt">Опыт: 5лет</p>
+                  <p class="trainer-opisanie">Работает в технике Balanced Body</p>
+                  <p class="trainer-details">Индивидуальный подход</p>
+                </div>
+              
+                <!-- Trainer 2: Единоборства -->
+                <div class="trainer fight">
+                  <img src="images/trener2.jpg" alt="Тренер 2" class="trainer-image" />
+                  <h3 class="trainer-name">Адель    25</h3>
+                  <p class="trainer-opyt">Опыт: 10лет</p>
+                  <p class="trainer-opisanie">Победитель турниров по MMA</p>
+                  <p class="trainer-details">Работает со взрослыми и детьми</p>
+                </div>
+              
+                <!-- Trainer 3: Пилатес -->
+                <div class="trainer pilates">
+                  <img src="images/trener3 (1).jpg" alt="Тренер 3" class="trainer-image" />
+                  <h3 class="trainer-name">Белла   22</h3>
+                  <p class="trainer-opyt">Опыт: 7лет</p>
+                  <p class="trainer-opisanie">Сертифицированный тренер по пилатесу</p>
+                  <p class="trainer-details">Обучение с нуля</p>
+                </div>
+              
+                <!-- Trainer 4: Пилатес -->
+                <div class="trainer pilates">
+                  <img src="images/trener4.jpg" alt="Тренер4" class="trainer-image" />
+                  <h3 class="trainer-name">Корнелия   33</h3>
+                  <p class="trainer-opyt">Опыт: 6лет</p>
+                  <p class="trainer-opisanie">Чёрный пояс по каратэ</p>
+                  <p class="trainer-details">Восстановление после травм</p>
+                </div>
+              
+                <!-- Trainer 5: Единоборства -->
+                <div class="trainer fight">
+                  <img src="images/trener5.jpg" alt="Тренер 5" class="trainer-image" />
+                  <h3 class="trainer-name">Мелинда   36</h3>
+                  <p class="trainer-opyt">Опыт: 22года</p>
+                  <p class="trainer-opisanie">Мастер спорта по пауэрлифтингу</p>
+                  <p class="trainer-details">Программы для восстановления</p>
+                </div>
+              
+                <!-- Trainer 6: Фитнес -->
+                <div class="trainer fitness">
+                  <img src="images/trener1.jpg" alt="Тренер 6" class="trainer-image" />
+                  <h3 class="trainer-name">Николь   26</h3>
+                  <p class="trainer-opyt">Опыт: 8лет</p>
+                  <p class="trainer-opisanie">Призёр международных турниров</p>
+                  <p class="trainer-details">Упор на безопасность и результат</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+    <!-- Footer section -->
+    <footer class="footer-section">
+      <div class="section-content">
+        <p class="copyright-text">© 2025 FitLine</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const select = document.getElementById("specialization");
+          const trainerCards = document.querySelectorAll(".trainer");
+      
+          select.addEventListener("change", function () {
+            const selectedValue = this.value;
+      
+            trainerCards.forEach(function (card) {
+              if (selectedValue === "all") {
+                card.style.display = "block";
+              } else {
+                if (card.classList.contains(selectedValue)) {
+                  card.style.display = "block";
+                } else {
+                  card.style.display = "none";
+                }
+              }
+            });
+          });
+        });
+      </script>
+  </body>
+</html>

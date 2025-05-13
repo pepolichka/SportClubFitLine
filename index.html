@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitLine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+            <img src="images/logo.png" alt="FitLine" class="logo-icon" width="24" height="24">
+            <h2 class="logo-text">FitLine</h2>
+          </a>
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="trainers.html" class="nav-link">Наши тренеры</a>
+          </li><li class="nav-item">
+            <a href="abonements.html" class="nav-link">Абонементы</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Контакты</a>
+          </li>
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title">Готов к переменам?</h2>
+            <h3 class="subtitle">Добро пожаловать в FITLINE</h3>
+            <p class="description">Оставь заявку — и мы поможем подобрать идеальный формат тренировок именно для тебя</p>
+            <div class="buttons">
+              <a href="#contact" id="openModal" class="button order-now">Оставить заявку</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="images/girls.jpg" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">О нас</h2>
+            <p class="text">Мы создаём не просто зал, а пространство, где каждая девушка чувствует себя уверенно.
+                Здесь нет соревнований, нет давления и стеснения. Только рост — физический и внутренний.
+                
+                Наши тренировки помогают прокачать не только тело, но и самооценку.
+                В команде — тренеры, которые умеют слушать, направлять и вдохновлять.
+                
+                Здесь ты — не одна. Здесь все — за тебя.</p>
+            <div class="social-link-list">
+              <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Menu section -->
+      <section class="whyus-section" id="whyus">
+        <h2 class="section-title">Почему мы</h2>
+        <div class="section-content">
+          <ul class="whyus-list">
+            <li class="whyus-item">
+              <img src="images/dumbbell.png" alt="whyus" class="whyus-image" />
+              <div class="whyus-details">
+                <h3 class="name">Новейшее оборудование</h3>
+                <p class="text">Мы используем только профессиональное оборудование, которое обеспечивает безопасность и эффективность тренировок</p>
+              </div>
+            </li>
+            <li class="whyus-item">
+              <img src="images/maps.png" alt="whyus" class="whyus-image" />
+              <div class="whyus-details">
+                <h3 class="name">Удобное расположение</h3>
+                <p class="text">Наш клуб находится рядом с метро и остановками общественного транспорта — легко добраться из любой части города</p>
+              </div>
+            </li>
+            <li class="whyus-item">
+              <img src="images/size.png" alt="whyus" class="whyus-image" />
+              <div class="whyus-details">
+                <h3 class="name">800м²-общая площадь клуба</h3>
+                <p class="text">Просторные залы, раздевалки, зоны отдыха и тренажёры — каждому найдётся место даже в час пик</p>
+              </div>
+            </li>
+            <li class="whyus-item">
+              <img src="images/muscle.png" alt="whyus" class="whyus-image" />
+              <div class="whyus-details">
+                <h3 class="name">Профессиональные тренеры </h3>
+                <p class="text">В нашей команде только сертифицированные специалисты с опытом — мы помогаем достигать результата грамотно и безопасно</p>
+              </div>
+            </li>
+            <li class="whyus-item">
+              <img src="images/note.png" alt="whyus" class="whyus-image" />
+              <div class="whyus-details">
+                <h3 class="name">Персональные тренировки</h3>
+                <p class="text">Индивидуальные занятия, составленные под твою цель и уровень подготовки, для максимального прогресса</p>
+              </div>
+            </li>
+            <li class="whyus-item">
+              <img src="images/money.png" alt="whyus" class="whyus-image" />
+              <div class="whyus-details">
+                <h3 class="name">Достуные цены</h3>
+                <p class="text">Качественный сервис по справедливой цене — у нас ты платишь за результат, а не за красивую вывеску</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Testimonials section -->
+      <section class="testimonials-section" id="testimonials">
+        <h2 class="section-title">Отзывы</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
+                  <img src="images/girl1.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Эвелина</h3>
+                  <i class="feedback">"супер!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/girl2.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Оливия</h3>
+                  <i class="feedback">"класс!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/girl3.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Мелисса</h3>
+                  <i class="feedback">"мега!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/girl4.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Ангелина</h3>
+                  <i class="feedback">"пупер"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/girl5.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Диана</h3>
+                  <i class="feedback">"вау."</i>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery section -->
+      <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Галерея</h2>
+        <div class="section-content">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img src="images/gym1.jpg" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="images/pool1.jpg" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="images/gym2.jpg" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+                <video class="gallery-image" muted loop playsinline preload="none">
+                    <source src="video/pilates.mp4" type="video/mp4">
+                 <source src="video/pilates.webm" type="video/webm">
+                </video>
+                <li class="gallery-item">
+                    <img src="images/pool2.jpg" alt="Gallery Image" class="gallery-image" />
+                  </li>
+            <li class="gallery-item">
+                <video class="gallery-image" muted loop playsinline preload="none">
+                    <source src="video/pilates2.mp4" type="video/mp4">
+                    <source src="video/pilates2.webm" type="video/webm">
+                </video>
+          </ul>
+        </div>
+      </section>
+      <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Контакты</h2>
+        <div class="section-content">
+          <div class="contact-left-column">
+            <ul class="contact-info-list">
+              <li class="contact-info">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p>Москва, ул.Спортивная 17</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-regular fa-envelope"></i>
+                <p>info@sportclubfitline.com</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-solid fa-phone"></i>
+                <p>+7(777)77-77</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-regular fa-clock"></i>
+                <p>Ежедневно 9:00 - 23:00</p>
+              </li>
+            </ul>
+            
+            <div class="contact-gif-container">
+              <img src="images/gifka.gif" alt="Фитнес анимация" class="contact-gif">
+            </div>
+          </div>
+      
+          <form id="applicationForm" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="contactName" placeholder="Ваше имя*" required class="form-input">
+              <div class="hint">Например: Анна</div>
+              <div class="error-text">Пожалуйста, введите имя</div>
+            </div>
+          
+            <div class="form-group">
+              <input type="tel" id="contactPhone" placeholder="Телефон*" required class="form-input">
+              <div class="hint">Формат: +7 999 123-45-67</div>
+              <div class="error-text">Введите корректный номер</div>
+            </div>
+          
+            <div class="form-group">
+              <input type="email" id="contactEmail" placeholder="Email" class="form-input">
+              <div class="hint">Необязательно, но желательно</div>
+              <div class="error-text">Проверьте формат email</div>
+            </div>
+          
+            <div class="form-group">
+              <select id="contactService" class="form-input" required>
+                <option value="" disabled selected>Выберите услугу*</option>
+                <option>Тренажерный зал</option>
+                <option>Единоборства</option>
+                <option>Пилатес</option>
+                <option>Персональный тренинг</option>
+              </select>
+              <div class="error-text">Выберите услугу из списка</div>
+            </div>
+          
+            <div class="form-group">
+              <textarea id="contactComment" placeholder="Ваш комментарий или пожелания..." class="form-input"></textarea>
+              <div class="hint">Можете указать удобное время для занятий</div>
+            </div>
+          
+            <label class="checkbox-label">
+              <input type="checkbox" id="contactAgreement" required>
+              <span>Я согласен на обработку данных*</span>
+              <div class="error-text">Необходимо ваше согласие</div>
+            </label>
+          
+            <button type="submit" class="button submit-btn">Записаться</button>
+            
+            <div class="success-msg">
+              <i class="fas fa-check-circle"></i> Спасибо! Мы свяжемся с вами в ближайшее время
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Footer section -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2025 Sport-Club</p>
+          <div class="social-link-list">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

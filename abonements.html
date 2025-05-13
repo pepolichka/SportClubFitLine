@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Абонементы | FitLine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+            <img src="images/logo.png" alt="FitLine" class="logo-icon" width="24" height="24">
+            <h2 class="logo-text">FitLine</h2>
+          </a>
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="trainers.html" class="nav-link">Наши тренеры</a>
+          </li>
+          <li class="nav-item">
+            <a href="abonements.html" class="nav-link active">Абонементы</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link">Контакты</a>
+          </li>
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+
+    <!-- Abonement section -->
+    <main>
+      <section class="abonement-section" id="abonements">
+        <div class="section-content">
+          <h2 class="section-title">Абонементы</h2>
+          <p class="description">
+            Мы подготовили разные варианты абонементов — для тех, кто хочет тренироваться в зале, в мини-группе или попробовать что-то новое.
+          </p>
+
+          <div class="abonement-grid">
+            <!-- Abonement Card: Gym -->
+            <div class="abonement-card">
+              <h3 class="abonement-title">Тренажерный зал</h3>
+              <p class="abonement-subtitle">Абонемент на 3 месяца</p>
+              <p class="abonement-price">от 20 000 ₽</p>
+              <ul class="abonement-details">
+                <li>Полный доступ ко всем зонам</li>
+                <li>Вводный инструктаж от тренера</li>
+                <li>Групповые тренировки включены</li>
+                <li>Без ограничений по времени</li>
+              </ul>
+              <a href="index.html#contact" class="button order-now">Записаться</a>
+            </div>
+
+            <!-- Abonement Card: Martial Arts -->
+            <div class="abonement-card">
+              <h3 class="abonement-title">Единоборства</h3>
+              <p class="abonement-subtitle">10 тренировок в мини-группе</p>
+              <p class="abonement-price">от 20 000 ₽</p>
+              <ul class="abonement-details">
+                <li>Современные методики</li>
+                <li>Мастера спорта в команде</li>
+                <li>Мини-группы до 6 человек</li>
+                <li>Экипировка предоставляется</li>
+              </ul>
+              <a href="index.html#contact" class="button order-now">Записаться</a>
+            </div>
+
+            <!-- Abonement Card: Pilates -->
+            <div class="abonement-card">
+              <h3 class="abonement-title">Пилатес</h3>
+              <p class="abonement-subtitle">8 тренировок в мини-группе</p>
+              <p class="abonement-price">от 20 000 ₽</p>
+              <ul class="abonement-details">
+                <li>До 5 человек в группе</li>
+                <li>Инструктор с опытом 5+ лет</li>
+                <li>Работа над глубокой мускулатурой</li>
+                <li>Инвентарь предоставляется</li>
+              </ul>
+              <a href="index.html#contact" class="button order-now">Записаться</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="section-content">
+        <p class="copyright-text">© 2025 FitLine. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
